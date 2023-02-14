@@ -1,38 +1,93 @@
-.App {
+.container {
+  width: 500px;
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+#passwordLength {
+  width: 35px;
+  background-color: rgb(222, 216, 216);
+}
+
+.inner-container {
+  width: 450px;
+  background-color: #dbded8;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: grid;
+  background-color: #dbded8;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
+  width: 450px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px 10px;
+  margin: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #074036;
+  color: gray;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #ccc;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #43a6b7;
+}
+
+.password-container {
+  margin-top: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.password {
+  background-color: #e3dfdf;
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #ccc;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.copy-button {
+  padding: 10px 20px;
+  background-color: #333;
   color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.copy-button:hover {
+  background-color: #555;
 }
